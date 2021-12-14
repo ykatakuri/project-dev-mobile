@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".login">
+    tools:context=".LoginActivity">
     <EditText
         android:id="@+id/login_edittext_email"
         android:layout_width="match_parent"
