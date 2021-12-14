@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "852641611976",
+    "project_id": "meet-foot",
+    "storage_bucket": "meet-foot.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:852641611976:android:c75412b23c1986965565fd",
+        "android_client_info": {
+          "package_name": "com.ykatakuri.meetfoot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "852641611976-murim7bim261ggask9oar16ei71tlkun.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsgNuRz3lsaVZHd6KLS-d_ZSG9Y-ssC_M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "852641611976-murim7bim261ggask9oar16ei71tlkun.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
