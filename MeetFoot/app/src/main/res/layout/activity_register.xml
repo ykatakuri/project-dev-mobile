@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".RegisterActivity"
     android:background="@drawable/bg">
 
     <View
@@ -23,11 +23,11 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/mainTextViewLogin"
+                android:id="@+id/registerTextViewRegister"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="68dp"
-                android:text="Connexion"
+                android:text="Inscription"
                 android:textColor="@color/white"
                 android:textSize="44sp"
                 android:textStyle="bold"
@@ -37,7 +37,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
-                android:id="@+id/mainEditTextEmail"
+                android:id="@+id/registerEditTextEmail"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
@@ -54,10 +54,10 @@
                 android:textColorHint="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/mainTextViewLogin" />
+                app:layout_constraintTop_toBottomOf="@+id/registerTextViewRegister" />
 
             <EditText
-                android:id="@+id/mainEditTextPassword"
+                android:id="@+id/registerEditTextPassword"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
@@ -74,45 +74,54 @@
                 android:textColorHint="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/mainEditTextEmail" />
+                app:layout_constraintTop_toBottomOf="@+id/registerEditTextEmail" />
 
-            <TextView
-                android:id="@+id/mainTextViewForgotPassword"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="Mot de passe oublié?"
-                android:textColor="@color/white"
-                android:textSize="10sp"
-                android:textStyle="italic"
-                app:layout_constraintEnd_toEndOf="@+id/mainEditTextPassword"
-                app:layout_constraintTop_toBottomOf="@+id/mainEditTextPassword" />
-
-            <Button
-                android:id="@+id/mainButtonLogin"
+            <EditText
+                android:id="@+id/registerEditTextConfirmPassword"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="24dp"
                 android:layout_marginEnd="24dp"
                 android:background="@drawable/edittext_bg"
-                android:text="Se Connecter"
+                android:drawableLeft="@drawable/ic_baseline_security_24"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Répéter mot de passe"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/registerEditTextPassword" />
+
+
+            <Button
+                android:id="@+id/registerButtonRegister"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="27dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/edittext_bg"
+                android:text="S'inscrire"
                 android:textColor="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/mainTextViewForgotPassword" />
+                app:layout_constraintTop_toBottomOf="@+id/registerEditTextConfirmPassword" />
 
             <TextView
-                android:id="@+id/mainTextViewCreateNewAccount"
+                android:id="@+id/registerTextViewAlreadyHaveAccount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Pas de compte?"
+                android:text="Vous avez déjà un compte?"
                 android:textColor="@color/white"
                 android:textSize="20sp"
-                app:layout_constraintEnd_toEndOf="@+id/mainButtonLogin"
-                app:layout_constraintStart_toStartOf="@+id/mainButtonLogin"
-                app:layout_constraintTop_toBottomOf="@+id/mainButtonLogin" />
+                app:layout_constraintEnd_toEndOf="@+id/registerButtonRegister"
+                app:layout_constraintStart_toStartOf="@+id/registerButtonRegister"
+                app:layout_constraintTop_toBottomOf="@+id/registerButtonRegister" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
