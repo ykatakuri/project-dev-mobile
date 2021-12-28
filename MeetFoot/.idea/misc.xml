@@ -4,10 +4,21 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/edittext_bg.xml" value="0.1675925925925926" />
+        <entry key="app/src/main/res/drawable/ic_chat.xml" value="0.1078125" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.2125" />
+        <entry key="app/src/main/res/drawable/ic_profile.xml" value="0.2125" />
+        <entry key="app/src/main/res/drawable/item_selector.xml" value="0.1078125" />
+        <entry key="app/src/main/res/drawable/round_corner.xml" value="0.1078125" />
+        <entry key="app/src/main/res/drawable/round_corners.xml" value="0.1078125" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.20833333333333334" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.19427083333333334" />
         <entry key="app/src/main/res/layout/activity_signup.xml" value="0.20833333333333334" />
+        <entry key="app/src/main/res/layout/fragment_chat.xml" value="0.18229166666666666" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_location.xml" value="0.18704710144927536" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.18704710144927536" />
+        <entry key="app/src/main/res/menu/item_menu.xml" value="0.1" />
       </map>
     </option>
   </component>
