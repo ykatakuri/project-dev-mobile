@@ -68,14 +68,11 @@ public class RegisterActivity extends AppCompatActivity {
         String confirmPassword = mConfirmPasswordEditText.getText().toString();
 
         if(!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-            Log.v("Signup", "Email non valide");
-            mEmailEditText.setError("Email non valide");
+            mEmailEditText.setError("Email incorrect");
             mEmailEditText.requestFocus();
         } else if(password.isEmpty() || password.length() < 8) {
-            Log.v("Signup", "Mot de passe non valide");
-            mPasswordEditText.setError("Mot de passe non valide");
+            mPasswordEditText.setError("Mot de passe incorrect");
         } else if(!password.equals(confirmPassword)) {
-            Log.v("Signup", "Les mots de passe sont différents");
             mPasswordEditText.setError("Les deux mots de passe sont différents");
         } else{
             progressDialog.setMessage("Inscription en cours...");

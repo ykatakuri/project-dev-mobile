@@ -66,12 +66,10 @@ public class MainActivity extends AppCompatActivity {
         String password= mPasswordEditText.getText().toString();
 
         if(!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-            Log.v("Signup", "Email non valide");
-            mEmailEditText.setError("Email non valide");
+            mEmailEditText.setError("Email incorrect");
             mEmailEditText.requestFocus();
         } else if(password.isEmpty() || password.length() < 8) {
-            Log.v("Signup", "Mot de passe non valide");
-            mPasswordEditText.setError("Mot de passe non valide");
+            mPasswordEditText.setError("Mot de passe incorrect");
         } else {
             progressDialog.setMessage("Connexion en cours...");
             progressDialog.setTitle("Connexion");
