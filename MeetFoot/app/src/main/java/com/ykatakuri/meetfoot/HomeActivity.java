@@ -24,7 +24,7 @@ public class HomeActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         navigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
-        getSupportFragmentManager().beginTransaction().replace(R.id.body_container, new HomeFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.body_container, new FootFragment()).commit();
         navigationView.setSelectedItemId(R.id.nav_home);
 
         navigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
@@ -34,7 +34,7 @@ public class HomeActivity extends AppCompatActivity {
                 switch (item.getItemId()){
 
                     case R.id.nav_home:
-                        fragment = new HomeFragment();
+                        fragment = new FootFragment();
                         break;
 
                     case R.id.nav_chat:
